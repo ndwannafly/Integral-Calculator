@@ -1,10 +1,16 @@
 class Integral:
 
-    def __init__(self, Fx = None, Exp = None, DiscreatePoints = None):
-        self.Fx = Fx
+    def __init__(self, Exp = None, Fx = None, discrete_points = None):
         self.Exp = Exp
-        self.DiscreatePoints = DiscreatePoints
+        self.Fx = Fx
+        self.discrete_points = discrete_points
         return
    
     def to_string(self):
-        return self.Fx
+        return self.Exp
+    
+    def get_discrete_points(self):
+        return self.discrete_points
+    
+    def f(self, x):
+        return self.Fx(x)
