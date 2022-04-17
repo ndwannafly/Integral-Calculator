@@ -1,7 +1,4 @@
-from crypt import methods
 import math
-from pickle import FALSE
-from estimator.estimator import Estimator
 from estimator.runge_estimator import RungeEstimator
 from integral.interal import Integral
 from method.trapezoidal import Trapezoidal
